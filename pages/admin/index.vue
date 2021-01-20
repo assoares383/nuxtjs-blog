@@ -1,0 +1,37 @@
+<template>
+  <div class="admin-page">
+    <section class="new-post">
+      <button @click="$router.push('/admin/new-post')">Create Post</button>
+    </section>
+    <section class="existing-posts">
+      <h1>Existing Posts</h1>
+      <PostList />
+    </section>
+  </div>
+</template>
+
+<script>
+import PostList from '@/components/Posts/PostList'
+
+export default {
+  components: {
+    PostList
+  }
+}
+</script>
+
+<style scoped>
+  .admin-page {
+    padding: 20px;
+  }
+
+  .new-post {
+    text-align: center;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 10px;
+  }
+
+  .existing-post h1 {
+    text-align: center;
+  }
+</style>
