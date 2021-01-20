@@ -3,41 +3,16 @@
     <section class="intro">
       <h1>Get the latest tech news!</h1>
     </section>
-    <section class="featured-posts">
-      <PostPreview
-        id="1"
-        thumbnail="https://images.wallpaperscraft.com/image/code_programming_symbols_140997_1920x1080.jpg"
-        title="Hello There!"
-        previewText="This my first post"
-      />
-      <PostPreview
-        id="2"
-        thumbnail="https://images.wallpaperscraft.com/image/code_programming_symbols_140997_1920x1080.jpg"
-        title="Hello There!"
-        previewText="This my first post"
-      />
-      <PostPreview
-        id="3"
-        thumbnail="https://images.wallpaperscraft.com/image/code_programming_symbols_140997_1920x1080.jpg"
-        title="Hello There!"
-        previewText="This my first post"
-      />
-      <PostPreview
-        id="4"
-        thumbnail="https://images.wallpaperscraft.com/image/code_programming_symbols_140997_1920x1080.jpg"
-        title="Hello There!"
-        previewText="This my first post"
-      />
-    </section>
+    <PostList />
   </div>
 </template>
 
 <script>
-import PostPreview from '@/components/Posts/PostPreview';
+import PostList from '@/components/Posts/PostList';
 
 export default {
   components: {
-    PostPreview
+    PostList
   }
 }
 </script>
@@ -69,17 +44,10 @@ export default {
   }
 
   @media (min-width: 768px) {
-    .intro h1 {
+    .intro h2 {
       font-size: 2rem;
     }
   }
 
-  .featured-posts {
-    display: flex;
-    padding: 20px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+
 </style>
